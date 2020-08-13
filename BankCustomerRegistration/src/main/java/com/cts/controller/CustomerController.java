@@ -39,7 +39,7 @@ public class CustomerController {
 	public void addCustomer(@RequestBody CustomerReg customerReg) {
 		customerservice.addCustomer(customerReg);
 	}
-	@ApiOperation(value= "update exisiting restaurant",
+	@ApiOperation(value= "update exisiting ",
 			notes="update restaurant which is already in database",
 			response = CustomerReg.class)
 	@RequestMapping(value = "/customer", method = RequestMethod.PUT)
